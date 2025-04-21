@@ -1,0 +1,34 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "baseUrl": ".",                         // Ensures paths resolve from project root
+    "strict": true,                         // Enables strict type checking
+    "jsx": "react-native",                  // Enables JSX support for React Native
+    "esModuleInterop": true,                // Enables default imports
+    "paths": {
+      "@/*": ["./*"]                        // Allows you to use @/ for imports
+    },
+    "types": [
+      "node",
+      "jest",
+      "@types/babel__core",
+      "@types/gensync",
+      "@types/hammerjs",
+      "@types/istanbul-lib-coverage",
+      "@types/stack-utils"
+    ]
+  },
+  "include": [
+    "./**/*.ts",                            // All TypeScript files
+    "./**/*.tsx",                           // All TSX (React Native) files
+    "expo-env.d.ts",                        // Include Expo types
+    "nativewind-env.d.ts",                  // NativeWind (Tailwind for RN) types
+    ".expo/types/**/*.ts"                   // Expo CLI generated types
+  ],
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
