@@ -1,4 +1,5 @@
-#DEMO
+DEMO
+
 https://github.com/user-attachments/assets/55c9e097-fe4b-4f45-a109-24b01776f00c
 # HealthSync: Wellness Tracker
 
